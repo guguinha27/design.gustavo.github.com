@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FONT AWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>Responsive portfolio website - Gustavo Santos</title>
+  </head>
+  <body>
+    <!--==================== STYLE SWITCHER ====================-->
+    <input type="radio" name="color" id="color-1" />
+    <input type="radio" name="color" id="color-2" />
+    <input type="radio" name="color" id="color-3" />
+    <input type="radio" name="color" id="color-4" />
+    <input type="radio" name="color" id="color-5" />
+    <input type="radio" name="color" id="color-6" />
+    <input type="radio" name="color" id="color-7" />
+    <input type="radio" name="color" id="color-8" />
+    <input type="radio" name="color" id="color-9" />
+    <input type="radio" name="color" id="color-10" />
+    <input type="checkbox" id="toggler" />
+    <input type="checkbox" id="day-night" />
+    <div class="style__switcher">
+      <label for="toggler" class="style__switcher-toggler">
+        <i class="fa-solid fa-gear fa-spin"></i>
+      </label>
+
+      <label for="day-night" class="style__switcher-theme">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </label>
+
+      <h3 class="style__switcher-title">Theme Colors</h3>
+
+      <div class="style__switcher-colors">
+        <label for="color-1" class="color-1 color"></label>
+        <label for="color-2" class="color-2 color"></label>
+        <label for="color-3" class="color-3 color"></label>
+        <label for="color-4" class="color-4 color"></label>
+        <label for="color-5" class="color-5 color"></label>
+        <label for="color-6" class="color-6 color"></label>
+        <label for="color-7" class="color-7 color"></label>
+        <label for="color-8" class="color-8 color"></label>
+        <label for="color-9" class="color-9 color"></label>
+        <label for="color-10" class="color-10 color"></label>
+      </div>
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Gustavo Santos</a>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Sobre</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#qualification" class="nav__link">Experiência</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Serviços</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Habilidades</a>
+          </li>
+
+
+        
+
+          <li class="nav__item">
+            <a href="#works" class="nav__link">Portfólio</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contactos</a>
+          </li>
+        </ul>
+
+      <!--   <input type="checkbox" id="nav-toggler" />
+
+        <label for="nav-toggler" class="nav__toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label> -->
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__small">Olá</span>
+            <h1 class="home__title">
+              <span>Sou o</span> Gustavo Santos <br />
+              sou <span>Designer Gráfico</span>
+            </h1>
+            <p class="home__description">
+              Bem-vindo ao meu Portfólio. Aqui podes conhecer-me melhor e ver alguns dos meus trabalhos. Sente-te à vontade para bisbilhotar as minhas redes sociais. Para perguntas ou informações, entra em contato comigo.
+            </p>
+            <div class="home__btns">
+              <a href="#contact" class="btn">Contacta-me</a>
+              <a href="#works" class="btn btn--transparent">Portfólio</a>
+            </div>
+          </div>
+          <div class="home__img-wrapper">
+            <img src="assets/img/Gustavo png.png" alt="" class="home__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__img-wrapper">
+            <img src="assets/img/WhatsApp Image 2023-07-11 at 20.33.08.jpeg" alt="" class="about__img" />
+          </div>
+
+          <div class="about__content">
+            <h2 class="section__title" data-title="Quem sou eu?">
+              Sou o Gustavo Santos, Designer Gráfico
+            </h2>
+
+            <p class="about__description">
+              Sou licenciado em design de comunicação. Ainda estou a ganhar experiência nessa área incrível. Faço vários trabalhos de design onde coloco todo o meu amor e inspiração.
+              Abaixo deixo o meu currículo onde podes ver um pouco da minha trajetória que ainda está á começar ou podes conhecer-me melhor através das minhas redes sociais.
+            </p>
+            <ul class="about__data grid">
+              <li class="data__item">
+                <h3 class="data__title">Nome:</h3>
+                <span class="data__description">Gustavo Santos</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">Idade:</h3>
+                <span class="data__description">21 anos</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">De:</h3>
+                <span class="data__description">Esmoriz, PT</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">Email:</h3>
+                <span class="data__description about__link"
+                  ><a href="mailto:gustavo.s2729@gmail.com" class="data__description about__link">gustavo.s2729@gmail.com</a></span
+                >
+              </li>
+            </ul>
+
+            <div class="about__bottom">
+              <a href="assets/pdf/Curriculo_do_Gustavo.pdf" target="_blank" class="btn">Download Cv</a>
+              <div class="about__social-links">
+                <a href="" class="about__social-link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="" class="about__social-link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="" class="about__social-link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="" class="about__social-link">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title title-center" data-title="O meu percurso">Qualificações</h2>
+    
+        <div class="resume__container container grid">
+          <div class="resume__group">
+            <h3 class="resume__heading">Educação</h3>
+    
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Curso</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+    
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Artes</h3>
+                    <span class="resume__date">2017-2020</span>
+                  </div>
+                  <p class="resume__description">Como estudante de artes, tenho a oportunidade de explorar a minha criatividade e expressão de uma forma única. Ao longo do curso, tive várias disciplinas artísticas, como a pintura e a música, onde adquiri técnicas específicas em cada uma delas. Através do curso, tenho a chance de desenvolver a minha própria voz artística e aprofundar análises críticas sobre obras de arte.</p>
+                </div>
+              </div>
+    
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Licenciatura
+    
+                  </h3>
+                  <span class="resume__icon">-</span>
+                </div>
+    
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Designer de Comunicação</h3>
+                    <span class="resume__date">2020-2023</span>
+                  </div>
+                  <p class="resume__description">Como designer de comunicação, crio recursos visuais que espalham mensagens e significados. Para fazer isso, uso novas mídias e tecnologias emergentes para colaborar e responder às necessidades de empresas, comunidades e organizações.
+
+                  </p>
+                </div>
+              </div>
+    
+              
+            </div>
+          </div>
+    
+          <div class="resume__group">
+            <h3 class="resume__heading">Experiência</h3>
+    
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Jardineiro</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+    
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Trabalho de Jardinagem</h3>
+                    <span class="resume__date">2023-2023</span>
+                  </div>
+                  <p class="resume__description">Durante o período de três anos de curso, executei trabalhos de jardinagem para suportar 
+                    as minhas despesas com a educação. Apesar desta não ser a minha área profissional 
+                    desejada para futuro, esta experiência proporcionou-me a oportunidade para superar 
+                    obstáculos e obrigou-me a estabelecer métodos de trabalho que me permitissem 
+                    conciliar com o estudo.</p>
+                </div>
+              </div>
+    
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Ator </h3>
+                  <span class="resume__icon">-</span>
+                </div>
+    
+                <div class="resume__content">
+                  <div class="resume__date-title">
+                    <h3 class="resume__title">Trabalho como ator</h3>
+                    <span class="resume__date">2023-2023</span>
+                  </div>
+                  <p class="resume__description">Trabalhei como ator para uma curta-metragem onde desempenhei o papel de uma
+                    das personagens principais. Simultaneamente criei também alguns dos adereços para o 
+                    espaço e o merchandising para os atores.</p>
+                </div>
+              </div>
+    
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title title-center" data-title="Serviços">
+          O que posso fazer por ti
+        </h2>
+
+        <div class="services__container container grid">
+          <div class="services__item">
+            <i class="fa-solid fa-pen-to-square services__icon"></i>
+            <h3 class="services__title">UI/UX Design</h3>
+            <p class="services__description">
+              Crio a interface do usuário para um aplicativo, site ou outra mídia interativa.
+            </p>
+            <span class="services__no">01</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-laptop services__icon"></i>
+            <h3 class="services__title">Desenvolvimento web</h3>
+            <p class="services__description">
+              Tarefas associadas à criação, construção e manutenção de sites e aplicativos da web que são executados online. 
+ 
+            </p>
+            <span class="services__no">02</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-chart-area services__icon"></i>
+            <h3 class="services__title">Pesquisa e análise
+            </h3>
+            <p class="services__description">
+              A pesquisa é o processo de investigar um tópico de maneira aprofundada e sistemática. A análise é a interpretação crítica da pesquisa. 
+            </p>
+            <span class="services__no">03</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-pen-to-square services__icon"></i>
+            <h3 class="services__title">Design de produtos
+            </h3>
+            <p class="services__description">
+              Precisas de publicidade ambulante? Um pequeno equipamento promocional para a equipa responsável? Adquire roupas, canecas ou bonés personalizados comigo.
+
+            </p>
+            <span class="services__no">04</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-laptop services__icon"></i>
+            <h3 class="services__title">Logos & Marcas
+            </h3>
+            <p class="services__description">
+              Precisas de uma impressão duradoura? A combinação certa de cores, formas e palavras definirá a tua marca. Posso ajudar-te. 
+
+            </p>
+            <span class="services__no">05</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-chart-area services__icon"></i>
+            <h3 class="services__title">Marketing digital
+            </h3>
+            <p class="services__description">
+              Um tipo de marketing digital que utiliza redes sociais como o Facebook, Twitter e Instagram para entregar anúncios pagos ao seu público-alvo.
+
+            </p>
+            <span class="services__no">06</span>
+          </div>
+        </div>
+      </section>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title title-center" data-title="Software">
+          Habilidades profissionais
+        </h2>
+
+        <div class="skills__container container grid">
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Photoshop</h3>
+              <span class="skills_no">85%</span>
+            </div>
+
+            <p class="skills__description">
+              "Os usuários podem criar, editar e manipular vários gráficos, bem como arte digital. Também permite criar e editar imagens com várias camadas e importar as imagens em vários formatos de arquivo."
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 85%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Figma</h3>
+              <span class="skills_no">75%</span>
+            </div>
+
+            <p class="skills__description">
+              "Uma aplicação de design de UI e UX baseado no navegador, com excelentes ferramentas de design, prototipagem e geração de código com recursos robustos que dão suporte às equipas que trabalham em todas as fases do design"
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 75%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Illustrator</h3>
+              <span class="skills_no">90%</span>
+            </div>
+
+            <p class="skills__description">
+              "Um profissional criativo que combina desenho e pintura à mão com mídia digital para produzir ilustrações visualmente cativantes. É o melhor programa para fazeres as tuas ilustrações. Desenha, cria e produz"            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 90%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">HTML</h3>
+              <span class="skills_no">75%</span>
+            </div>
+
+            <p class="skills__description">
+              "HTML é a linguagem de marcação padrão para criar páginas da Web. HTML descreve a estrutura de uma página da Web.  Os elementos HTML informam ao navegador como exibir o conteúdo." Excelente para fazer os seus websites"          </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 75%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">JavaScript</h3>
+              <span class="skills_no">70%</span>
+            </div>
+
+            <p class="skills__description">
+              "É uma linguagem de programação baseada em lógica que pode ser usada para modificar o conteúdo do site e fazer com que ele se comporte de maneiras diferentes em resposta às ações do usuário."
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 70%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Canva</h3>
+              <span class="skills_no">80%</span>
+            </div>
+
+            <p class="skills__description">
+              "O Canva é uma excelente aplicação de design. Ele permite criar uma variedade surpreendentemente grande de recursos incluindo anúncios, infográficos, vídeos e até sites de forma fácil, barata e rápida . É uma aplicação imprescindível"
+            </p>
+
+            <div class="skills__bar">
+              <div class="skills__percentage" style="width: 80%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="works section" id="works">
+        <h2 class="section__title title-center" data-title="O meu portfolio">Trabalhos</h2>
+    
+        <div class="work__container container grid">
+          <div class="work__card">
+            <a data-modal-target="modal1" class="work__card-link">
+              <img src="assets/img/utilizar como imagem principal.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Design Gráfico</h3>
+                <p class="work__desc">Banda Desenhada </p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="work__card">
+            <a data-modal-target="modal2" class="work__card-link">
+              <img src="assets/img/tshirt mockup 1 final.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Campanha solidária</h3>
+                <p class="work__desc">Um lápis por uma escola</p>
+              </div>
+            </a>
+          </div>
+        
+          <div class="work__card">
+            <a data-modal-target="modal3" class="work__card-link">
+              <img src="assets/img/utilizar como principal3.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Design Gráfico</h3>
+                <span class="work__desc">Coleção editorial</span>
+              </div>
+            </a>
+          </div>
+          <div class="work__card">
+            <a data-modal-target="modal4" class="work__card-link">
+              <img src="assets/img/moeda.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Design Gráfico</h3>
+                <span class="work__desc">Moeda para a APCF</span>
+              </div>
+            </a>
+          </div>
+          <div class="work__card">
+            <a data-modal-target="modal5" class="work__card-link">
+              <img src="assets/img/embalagem.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Design de Embalagem</h3>
+                <span class="work__desc">DouRosa</span>
+              </div>
+            </a>
+          </div>
+          <div class="work__card">
+            <a data-modal-target="modal6" class="work__card-link">
+              <img src="assets/img/carimbo.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Logotipo</h3>
+                <span class="work__desc">Direito á cidade</span>
+              </div>
+            </a>
+          </div>
+          <div class="work__card">
+            <a data-modal-target="modal7" class="work__card-link">
+              <img src="assets/img/big hand.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Merchandising</h3>
+                <p class="work__desc">The Big Hand</p>
+              </div>
+            </a>
+          </div>
+          <div class="work__card">
+            <a data-modal-target="modal8" class="work__card-link">
+              <img src="assets/img/pintura.jpg.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Pintura</h3>
+                <p class="work__desc">Bart Simpson</p>
+              </div>
+            </a>
+          </div>
+        
+          <div class="work__card">
+            <a data-modal-target="modal9" class="work__card-link">
+              <img src="assets/img/milton glaser.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Poster</h3>
+                <span class="work__desc">Milton Glaser</span>
+              </div>
+            </a>
+          </div>
+          <div class="work__card">
+            <a data-modal-target="modal10" class="work__card-link">
+              <img src="assets/img/Multiplex.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Poster</h3>
+                <span class="work__desc">Multiplex 2022</span>
+              </div>
+            </a>
+          </div>
+          <div class="work__card">
+            <a data-modal-target="modal11" class="work__card-link">
+              <img src="assets/img/guerra.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Poster</h3>
+                <span class="work__desc">Poster for Tomorrow 2022</span>
+              </div>
+            </a>
+          </div>
+          <div class="work__card">
+            <a data-modal-target="modal12" class="work__card-link">
+              <img src="assets/img/Jornal.png" alt="" class="work__img" />
+              <div class="work__description">
+                <h3 class="work__title">Redesign</h3>
+                <span class="work__desc">Jornal de Notícias</span>
+              </div>
+            </a>
+          </div>
+        </div>        
+
+        <!-- Modal 1 -->
+        <div class="modal" id="modal1">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>            
+    
+                <!-- Slide Images -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/portfolio/BD/1.png" /></div>
+                    <div class="swiper-slide"><img src="assets/img/portfolio/BD/2.png" /></div>
+                    <div class="swiper-slide"><img src="assets/img/portfolio/BD/3.png" /></div>
+                    <div class="swiper-slide"><img src="assets/img/portfolio/BD/4.png" /></div>    
+                    <div class="swiper-slide"><img src="assets/img/portfolio/BD/5.png" /></div>       
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+    
+            <h1>Banda Desenhada</h1>
+            <p class="description">Este projeto consiste na criação de ilustrações para a 3.ª edição da revista de Banda Desenhada. 
+              Tem com objetivo prevenir a obesidade infantil, aumentando a literacia para a prática de uma alimentação saudável e do exercício físico, através da leitura de uma Banda Desenhada. As ilustrações tinham como publico alvo crianças com idades compreendidas entre os 8 e os 12 anos e por isso as ilustrações deverão ser adequadas à faixa etária e serem simples, funcionais, apelativas. 
+              O meu projeto consistiu em desenvolver uma banda desenhada com base em formas geométricas e que fosse bastante colorida para cativar as crianças.
+              
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 1 -->
+
+        <!-- Modal 2 -->
+        <div class="modal" id="modal2">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/campanha_solidaria/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/campanha_solidaria/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/campanha_solidaria/3.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/campanha_solidaria/4.png" /></div>  
+                <div class="swiper-slide"><img src="assets/img/portfolio/campanha_solidaria/5.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/campanha_solidaria/6.png" /></div>    
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Um lápis por uma escola</h1>
+            <p class="description">Campanha “Um lápis por uma escola” com a finalidade de promover e ajudar na construção de uma Escola na aldeia de Matsinho – Moçambique. 
+              The Big Hand é uma organização não-governamental para o desenvolvimento que promove o bem-estar das crianças que vivem em condições desfavoráveis, com especial atenção para as meninas órfãs, garantindo o seu acesso à educação, cuidados de saúde e nutrição, a água e saneamento básico. 
+              Através de um modelo centrado na criança The Big Hand constrói escolas, investe em equipamentos, na formação de professores e desenvolve, em parceria com os agentes locais, programas inclusivos que visam preparar as crianças para os desafios da vida em estreita ligação com a comunidade onde vivem. Trabalha em parceria com as comunidades, organizações locais e governos. The Big Hand constrói "escolas-amigas" baseando-se nas boas práticas da UNICEF.
+              O meu projeto consistiu em desenvolver algum merchandising e posters para angariar fundos para esta instituição. O meu objetivo foi tentar juntar uma peça de puzzle que representa a diversão e as brincadeiras de criança com uma casa que simboliza o abrigo. Juntei esta peça de puzzle com uma fotografia de uma criança que nos foi fornecida pela própria organização. 
+              Este projeto foi selecionado para ser colocado num roll up para simbolizar a associação nas futuras vendas associadas. 
+                            
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 2 -->
+
+        <!-- Modal 3 -->
+        <div class="modal" id="modal3">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/3.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/4.png" /></div>     
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/5.png" /></div>  
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/6.png" /></div>  
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/7.png" /></div>  
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/8.png" /></div>  
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/9.png" /></div>  
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/10.png" /></div>  
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/11.png" /></div>    
+                <div class="swiper-slide"><img src="assets/img/portfolio/colecao_editorial/12.png" /></div>   
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Coleção editorial </h1>
+            <p class="description">Coleção editorial 
+              O objetivo deste trabalho é projetar o design gráfico para duas capas e um miolo de uma coleção. 
+              Esta coleção de livros foi projetada por parte de um exercício para a minha aula de design editorial. Tivemos a tarefa de criar uma coleção de livros de viagem, que envolveu o design de duas das capas e o miolo para oito livros.
+              Para desenvolver o conceito da coleção, pesquisei sobre a cultura e a história de cada cidade retratada nos livros. 
+              O resultado final é visualmente marcante, utilizei os principais elementos de cada cidade como principal elemento em cada uma das capas e trabalhei as cores conforme a história de cada livro. 
+                             
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 3 -->
+
+        <!-- Modal 4 -->
+        <div class="modal" id="modal4">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/moedas/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/moedas/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/moedas/3.png" /></div>
+                      
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Moeda para a APCFMoeda para a APCF</h1>
+            <p class="description">Este projeto consiste em fazer o design das faces de uma moeda para a APCF – Associação Portuguesa de Ciências Forenses. A moeda deverá ser cunhada e apresentada no Congresso da APCF a decorrer nos dias 7 e 8 de abril de 2022. 
+              Para este projeto, utilizei vários símbolos que remetem para as ciências forenses como as pegadas, o DNA, a lupa, armas, microscópios, câmara fotográfica, corpos, etc. O meu objetivo era projetar um design simples e eficaz onde mostrasse os aspetos principais que as ciências forenses abordam. Visto que a moeda seria para ser cunhada procurei fazer ilustrações simples que facilitassem o processo. 
+                          
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 4 -->
+
+        <!-- Modal 5 -->
+        <div class="modal" id="modal5">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/embalagem/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/embalagem/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/embalagem/3.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/embalagem/4.png" /></div>
+                     
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>DouRosa</h1>
+            <p class="description">Este trabalho consistiu no redesign da imagem promocional do vinho douRosa produzido pela Quinta de la Rosa, na região do Pinhão, no Douro.
+              A Quinta de la Rosa é uma vinícola pioneira em Portugal, conhecida pelos seus vinhos. A propriedade também possui um charmoso hotel e restaurante. 
+              Trabalhei a rosa como elemento principal utilizando a técnica de aguarela. Utilizei um rotulo branco para transmitir a pureza e o requinte que este vinho nos dá. Assim esta proposta poderá destacar-se entre os produtos no mercado. O uso de uma cor rosa e uma ilustração cativante como peça central conferem uma identidade incomparável.
+                            
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 5 -->
+
+        <!-- Modal 6 -->
+        <div class="modal" id="modal6">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/3.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/4.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/5.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/6.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/7.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/8.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/9.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/logos/10.png" /></div>          
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Direito á cidade </h1>
+            <p class="description">O concurso é promovido por uma organização comprometida com a defesa dos direitos urbanos e o direito à cidade. O seu objetivo é selecionar um logo que represente visualmente os princípios fundamentais relacionados com a temática.
+              O tema central do concurso é o "Direito à Cidade". Os participantes foram convidados a criar um logo original que transmita a importância do acesso igualitário aos espaços urbanos, o direito à moradia adequada, a inclusão social, a sustentabilidade ambiental e a participação dos cidadãos na construção das cidades.
+              As diretrizes para o logo são flexíveis, permitindo a expressão criativa dos participantes. No entanto, espera-se que o design seja claro, impactante e capaz de comunicar a mensagem do direito à cidade de forma visualmente atraente.
+              Para desenvolver o meu logo foquei-me em representar a cidade a partir da tipografia. Tentei unir todas as letras para simbolizar a união e os valores que eram pedidos.  
+                          
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 6 -->
+
+        <!-- Modal 7 -->
+        <div class="modal" id="modal7">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/3.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/4.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/5.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/6.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/7.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/8.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/9.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/10.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/11.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/12.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/13.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/14.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/15.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/16.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/merchandising/17.png" /></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Merchandising The Big Hand</h1>
+            <p class="description">The Big Hand é uma organização não-governamental para o desenvolvimento que promove o bem-estar das crianças que vivem em condições desfavoráveis, com especial atenção para as meninas órfãs, garantindo o seu acesso à educação, cuidados de saúde e nutrição, a água e saneamento básico. 
+              Através de um modelo centrado na criança The Big Hand constrói escolas, investe em equipamentos, na formação de professores e desenvolve, em parceria com os agentes locais, programas inclusivos que visam preparar as crianças para os desafios da vida em estreita ligação com a comunidade onde vivem. Trabalha em parceria com as comunidades, organizações locais e governos. The Big Hand constrói "escolas-amigas" baseando-se nas boas práticas da UNICEF.
+              Este projeto surgiu, pois, a organização “The Big Hand” gostou do trabalho anterior e pediu para criarmos merchandising sem nenhuma restrição para angariar fundos para construi escolas em Moçambique. 
+              Para este projeto pensei em criar merchandising para crianças, homens e mulheres. Para cada um tentei desenvolver uma ilustração diferente. 
+              Para as crianças tentei dar dinamismo e para isso criei uma montanha de monstros onde pelo meio inserimos “monstrinhos” relacionados com a alimentação, com destaque visual. 
+              Para as mulheres utilizei uma junção de várias flores devido a ser um elemento muito apreciado na maioria das mulheres.
+              Para os homens a ideia foi trabalhar elementos tribais e então explorei o facto de a África ser um país com muito sol. Este elemento veio metaforicamente tentar dar uma luz na vida das pessoas. 
+                            
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 7 -->
+
+        <!-- Modal 8 -->
+        <div class="modal" id="modal8">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/pintura/1.png" /></div>
+                      
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Pintura</h1>
+            <p class="description">A pintura retrata Bart Simpson, o filho travesso e adorado da família Simpson. Esta pintura foi executada numa tela retangular de tamanho médio, a obra foi feita com tinta acrílica para criar uma imagem vívida e colorida.
+              Possui um corpo amarelo brilhante, traços distintos e expressão icônica. Os traços faciais são vivos e expressivos, enfatizando a personalidade única de Bart.
+              O fundo da pintura é um cenário vibrante que reflete o universo de "Os Simpsons”.
+                             
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 8 -->
+
+        <!-- Modal 9 -->
+        <div class="modal" id="modal9">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster1/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster1/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster1/3.png" /></div>     
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster1/4.png" /></div>    
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Cartaz Milton Glaser</h1>
+            <p class="description">Este cartaz anuncia uma palestra sobre o autor Milton Glaser. Esta composição reflete um pouco a linguagem gráfica do designer em questão. 
+              Milton Glaser foi um renomado designer gráfico e ilustrador americano que nasceu em 1929 e faleceu em 2020. Ele é amplamente reconhecido como um dos designers mais influentes do século XX e fez contribuições significativas para o campo do design gráfico.
+                            
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 9 -->
+
+        <!-- Modal 10 -->
+        <div class="modal" id="modal10">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster2/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster2/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster2/3.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster2/4.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster2/5.png" /></div>
+                       
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Multiplex 2022</h1>
+            <p class="description">Numa iniciativa da Universidade Lusófona do Porto em parceria com o Teatro Municipal do Porto e o Batalha Centro de Cinema, a décima segunda edição do MULTIPLEX em 2022 é repartida em dois momentos. Estudantes de design são recrutados todos os anos para ajudar a desenvolver a identidade do evento.
+              Para criar uma composição visualmente atraente, estabeleci uma hierarquia clara que direcione a atenção do espectador para as informações mais importantes do póster. 
+              O meu objetivo era capturar a essência do evento Multiplex, apresentando os talentos de cineastas emergentes e celebrando a arte da cinematografia. Através de uma composição meticulosa e de um design visualmente harmonioso, procurei criar uma identidade que representasse efetivamente o espírito do evento.
+                             
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 10 -->
+
+        <!-- Modal 11 -->
+        <div class="modal" id="modal11">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster3/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster3/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster3/3.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster3/4.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster3/5.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/poster3/6.png" /></div>
+                
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Poster for Tomorrow 2022</h1>
+            <p class="description">O Poster for Tomorrow é um concurso internacional de pósteres. É uma organização independente sem fins lucrativos com sede em Paris. O objetivo principal da competição é inspirar indivíduos, dentro e fora da comunidade de design, a criar pósteres que promovam o diálogo sobre questões de relevância global. Com uma história de mais de uma década, o Poster for Tomorrow atraiu mais de 40.000 inscrições de mais de 150 países e organizou mais de 1.000 exposições nos cinco continentes.
+              O tema da competição de 2022, foi "Faça a coisa certa”. Este amplo tema apresentou uma infinidade de desafios na comunicação eficaz da sua essência. Motivado pela minha indignação pessoal com a guerra devastadora na Ucrânia, decidi contribuir com seis soluções para o briefing da competição. 
+              A mensagem principal para o meu trabalho foi de que os conceitos de guerra e paz assumiram um nível de importância sem precedentes na sociedade contemporânea. À luz disso, utilizei símbolos distintos em cada póster, cada um representando a ideia central de "paz perdida". 
+                          
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 11 -->
+
+        <!-- Modal 12 -->
+        <div class="modal" id="modal12">
+          <div class="modal-content">
+            <span class="modal-close">&times;</span>
+
+            <!-- Slide Images -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/portfolio/redesignJN/1.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/redesignJN/2.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/redesignJN/3.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/redesignJN/4.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/redesignJN/5.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/redesignJN/6.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/redesignJN/7.png" /></div>
+                <div class="swiper-slide"><img src="assets/img/portfolio/redesignJN/8.png" /></div>      
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <h1>Redesign JN</h1>
+            <p class="description">O JN é um conceituado jornal português com uma história rica. Possui a distinção de ser uma das publicações mais vendidas do país. Ao longo dos anos, o JN sofreu diversas transformações, preservando o seu valioso património. Uma das propostas para a minha aula de design editorial era redesenhar o JN.
+              Para embarcar no processo de redesenho, realizei uma análise abrangente do jornal existente. Isso implicou a identificação de seus pontos fortes e áreas que precisam de ser melhoradas. A análise revelou dois pontos fracos proeminentes: a paginação interna, que muitas vezes se mostrava confusa e difícil de ler, e as capas, que apresentavam múltiplos problemas devido à existência de versões verticais e horizontais.
+              Com essas deficiências em mente, desenvolvi uma proposta que abordou efetivamente essas preocupações. O principal objetivo era não só resolver os problemas identificados, mas também elevar a posição competitiva do JN no mercado, sobretudo no contexto da crescente concorrência de jornais como o Público e o Expresso.
+                            
+              </p>
+          </div>
+        </div>
+        <!-- Fim Modal 12 -->
+
+      </section>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title title-center" data-title="Entrar em contato
+        ">
+          Contacta-me
+        </h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__details">
+            <div class="contact__item">
+              <i class="fa-solid fa-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Liga-me</h3>
+                <span class="contact__data">+351 916116482</span>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <i class="fa-solid fa-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Envia e-mail</h3>
+                <span class="contact__data">
+                  gustavo.s2729@gmail.com
+                  </span>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <i class="fa-solid fa-location-dot contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Morada</h3>
+                <span class="contact__data"
+                  >Esmoriz, Portugal
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="form__group">
+              <div class="form__input">
+                <input type="text" placeholder="Nome" class="input__control" />
+              </div>
+
+              <div class="form__input">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="input__control"
+                />
+              </div>
+            </div>
+            <div class="form__input">
+              <input type="text" placeholder="Assunto" class="input__control" />
+            </div>
+
+            <div class="form__input">
+              <textarea
+                name=""
+                id=""
+                placeholder="Message"
+                cols="30"
+                rows="10"
+                class="input__control textarea"
+              >
+              </textarea>
+            </div>
+
+            <button class="btn contact__btn">Enviar mensagem</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__copyright">&copy; 2023 Gustavo. Todos os direitos reservados
+        </p>
+        <div class="footer__social-links">
+          <a href="" class="footer__social-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="" class="footer__social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="" class="footer__social-link">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a href="" class="footer__social-link">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  </body>
+</html>
